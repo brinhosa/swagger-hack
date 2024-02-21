@@ -1,3 +1,24 @@
+During testing, Swagger leaks are occasionally encountered. Common leaks are shown in the image:
+(Specific image of Swagger leak)
+
+Some leaks involve numerous interfaces, and it's practically impossible to manually test each one. Therefore, I wrote a Python script to automatically crawl all interfaces, configure the parameters, and send packets for access.
+
+**The first version was only adapted for one version of Swagger. Significant differences exist between versions. Subsequent investigations covered many versions of Swagger, greatly enhancing the script's adaptability.**
+
+Optimizations include:
+- Adaptation to multiple versions of Swagger
+- Addition of multiprocessing
+- Enhanced robustness of the program
+- Improved console display and log file generation
+
+Single link format:
+(Specific image of the single link format)
+File format:
+(Specific image of the file format)
+
+Final result:
+(Specific image of the final result)
+
 # Swagger-hack 2.0
 
 在测试中偶尔会碰到swagger泄露
